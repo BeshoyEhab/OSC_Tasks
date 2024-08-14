@@ -6,7 +6,7 @@ mkdir ./Bishoy/BAD
 
 touch ./Bishoy/BAD/bad.txt
 
-cp ./one.txt ~/Downloads/
+cp ./Bishoy/one.txt ~/Downloads/
 
 cd ~/Downloads/
 
