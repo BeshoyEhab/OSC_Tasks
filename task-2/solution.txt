@@ -1,0 +1,28 @@
+git config --global user.name "BeshoyEhab"
+git config --global user.email beshoy5050ehab@gmail.com
+
+gh repo clone BeshoyEhab/OSC_Tasks
+
+cd OSC_Tasks
+mkdir task-2
+
+cd task-2
+touch greeting.txt
+
+echo hello world > greeting.txt
+
+git add .
+git commit -a -m "Added greeting.txt"
+
+git branch -b intro
+
+echo I love Git >> greeting.txt
+
+git commit -a -m "Added I love Git"
+
+git chechout main
+git merge intro
+
+git tag -a 0e7bca4 -m "v1"
+
+git push
