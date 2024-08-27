@@ -7,11 +7,8 @@ while [[ $path == "" ]]
 	do read -p "Please enter a path: " path
 done
 
-for file in $(ls -a $path)
+for file in $(find $path -name "*.txt")
 	do
-		if [[ $file == *.txt ]]
-			then
-				mv "$path/$file" "$path/old_$file"
-		fi
+		mv "$(dirname $file)/$(basename $file)" "$(dirname $file)/old_$(basename $file)"
 done
 
